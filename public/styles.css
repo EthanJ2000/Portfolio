@@ -1,0 +1,419 @@
+html, body {
+  background-size: cover;
+  top: 0%;
+  left: 0%;
+  margin: 0;
+  height: 100%;
+  width: 105%;
+   
+
+}
+html{
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.background{
+  z-index: -1;
+  height: 120%;
+  width: 100%;
+}
+.centered {
+  color: white;
+  margin-top: -36.5%;
+  margin-left: -12%;
+  text-align: center;
+  font-size: 200%;
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+.homelink{
+  text-decoration: none;
+  color: white;
+}
+.container{
+  margin-top: -10%;
+}
+
+.navbar{
+  font-family: 'Courier New', Courier, monospace;
+  z-index: 1;
+  text-align: right;
+  margin-top: 2%;
+  margin-left: 47%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  
+}
+
+.navbar a{
+  font-size: 150%;
+  text-decoration: none;
+  color: white;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.navbar a:hover{
+  font-size: 200%;
+}
+
+.facebook{
+  left:37%;
+  padding-top: 9%;
+  padding-left: 36%;
+  width: 3%;
+  height: 3%;
+  text-align: center;
+  display: inline-block;
+}
+.twitter{
+  /* position: absolute; */
+  left:42%;
+  top : 89%;
+  /* padding: 0.5%; */
+  padding-left: 1%;
+  width: 3%;
+  height: 3%;
+  text-align: center;
+  display: inline-block;
+}
+.instagram{
+  top : 89%;
+  /* position: absolute; */
+  left:47%;
+  /* padding: 0.5%; */
+  padding-left: 1%;
+  width: 3%;
+  height: 3%;
+  text-align: center;
+  display: inline-block;
+}
+.youtube{
+  top : 89%;
+  /* position: absolute; */
+  padding-left: 1%;
+  left:52%;
+  /* padding: 0.5%; */
+  width: 3%;
+  height: 3%;
+  text-align: center;
+  display: inline-block;
+}
+.aboutpicture{
+  border: 3px solid black;
+  margin-left: 37.5%;
+  margin-top: 5%;
+  height: 190px;
+  width: 200px;
+  border-radius: 50%; 
+}
+#aboutheading{
+  color: white;
+  margin-top: 5%;
+  margin-left: 40%;
+}
+.bioparagraph{
+  color: black;
+  font-size: 150%;
+  margin-left: 2%;
+  margin-right: 11%;
+  margin-bottom: 5%;
+}
+.younglinglink{
+  text-decoration: none;
+  color: black;
+}
+#interests{
+  margin-left: 41%;
+  color: white;
+}
+
+
+.Skills{
+  padding-top: 5%;
+  color: white;
+  margin-bottom: 15%;
+}
+
+#SkillsHead{
+  color: white;
+  margin-left: 42.5%;
+  margin-top: 5%;
+}
+.languageshead{
+  margin-left: 40%;
+  font-size: 200%;
+}
+.languageslist{
+  font-size: 200%;
+  margin-left: 29%;
+}
+
+
+
+.progressbar {
+  position: absolute;
+  background-color: black;
+  border-radius: 5%;
+  width: 15%;
+  /* (height of inner div) / 2 + padding */
+  /* display: inline-block; */
+  display: flex;
+  align-items: center;
+  margin-left: 55%;
+  margin-top: -2.1%;
+}
+.delphibar{
+  background-color: green;
+  width: 45%;
+  /* Adjust with JavaScript */
+  height: 30px;
+  border-radius: 5%;
+  animation: delphi 2s;
+}
+@keyframes delphi{
+  from {
+    width: 0;
+  }
+  to {
+    width: 45%;
+  }
+}
+.javabar{
+  background-color: green;
+  width: 50%;
+  /* Adjust with JavaScript */
+  height: 30px;
+  border-radius: 5%;
+  animation: java 2s;
+}
+@keyframes java{
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+.pythonbar{
+  background-color: green;
+  width: 50%;
+  /* Adjust with JavaScript */
+  height: 30px;
+  border-radius: 5%;
+  animation: python 2s;
+}
+@keyframes python{
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+.htmlbar{
+  background-color: green;
+  width: 65%;
+  /* Adjust with JavaScript */
+  height: 30px;
+  border-radius: 5%;
+  animation: html 2s;
+}
+@keyframes html{
+  from {
+    width: 0;
+  }
+  to {
+    width: 65%;
+  }
+}
+.cssbar{
+  background-color: green;
+  width: 60%;
+  /* Adjust with JavaScript */
+  height: 30px;
+  border-radius: 5%;
+  animation: css 2s;
+}
+@keyframes css{
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+.contacthead{
+  margin-left: 40%;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  color: white;
+}
+
+.contactform{
+  background-color: grey;
+  width: 100%;
+  margin: 10%;
+}
+::placeholder{
+  color: white;
+}
+.formlabels{
+  color: white;
+  font-size: 150%;
+  margin-left: 20%;
+ 
+}
+
+input{
+  color: white;
+  height: 3%;
+  width: 40%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid white; 
+  
+}
+.form{
+  text-align: center;
+  margin-right: 9%;
+}
+label{
+  margin-right: 2%;
+}
+
+#user_name{
+  display: inline-block;
+  
+}
+
+#user_email{
+  margin-top: 4%;
+  display: inline-block;
+  
+}
+
+#message{
+  margin-top: 4%;
+  width: 40%;
+  height: 60px;
+  display: inline-block;
+  margin-right: 1%;
+  
+}
+
+#submit{
+  margin-top: 3%;
+  display: inline-block;
+}
+
+/* Mobile */
+/* max 480 start */
+@media only screen and (max-width: 480px){
+*{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+ .About{
+   margin-top: -30%;
+ } 
+.page{
+  font-size: 15px;
+}
+.navbar{
+  margin-left: 40%;
+  margin-top: 10%;
+  font-size: 80%;
+  position: fixed;
+}
+.navbar a{
+  width: 100%;
+}
+
+.background{
+  height: 650px ;
+  width: 100%;
+  overflow: hidden;
+}
+
+.centered{
+  color: white;
+  margin-top: -90%;
+  padding-left: 5%;
+  text-align: center;
+  font-size: 115%;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.facebook{
+  padding-left: 32%;
+  margin-bottom: 5%;
+  height: 5%;
+  width: 5%;
+}
+.twitter{
+  margin-left: 2%;
+  margin-bottom: 5%;
+  height: 5%;
+  width: 5%;
+}
+.instagram{
+  margin-left: 2%;
+  margin-bottom: 5%;
+  height: 5%;
+  width: 5%;
+}
+.youtube{
+  margin-left: 2%;
+  margin-bottom: 5%;
+  height: 5%;
+  width: 5%;
+}
+
+.aboutpicture{
+  /* border: 5px; */
+  margin-left: 38%;
+  margin-top: 50%;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%; 
+}
+#aboutheading{
+  margin-left: 36%;
+}
+
+#message{
+  margin-bottom: 10%;
+}
+#interests{
+  margin-left: 33%;
+}
+.contacthead{
+  padding-top: 30%;
+  padding-left: 0%;
+  margin-left: 0%;
+  /* padding-right: 50%; */
+  text-align: center
+}
+.formlabels{
+  margin-left: 10%;
+}
+#user_name{
+margin-left: 8%;
+width: 50%;
+}
+#user_email{
+margin-left: 8%;
+width: 50%;
+}
+#message{
+margin-left: 2%;
+width: 50%;
+}
+
+
+} 
+/* max 480 end */
+
