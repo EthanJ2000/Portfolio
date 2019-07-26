@@ -13,7 +13,8 @@ var firebaseConfig = {
 
   firebase.initializeApp(firebaseConfig);
 
-
+  grecaptcha.execute();
+  grecaptcha.render();
 
 
 
