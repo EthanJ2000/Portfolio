@@ -1,0 +1,152 @@
+[debug] [2019-07-29T07:22:42.511Z] ----------------------------------------------------------------------
+[debug] [2019-07-29T07:22:42.513Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Ethan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-07-29T07:22:42.514Z] CLI Version:   7.2.0
+[debug] [2019-07-29T07:22:42.514Z] Platform:      win32
+[debug] [2019-07-29T07:22:42.514Z] Node Version:  v10.16.0
+[debug] [2019-07-29T07:22:42.515Z] Time:          Mon Jul 29 2019 09:22:42 GMT+0200 (South Africa Standard Time)
+[debug] [2019-07-29T07:22:42.515Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-07-29T07:22:42.534Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-07-29T07:22:42.535Z] > authorizing via signed-in user
+[debug] [2019-07-29T07:22:42.536Z] [iam] checking project form-658b2 for permissions ["firebase.projects.get"]
+[debug] [2019-07-29T07:22:42.538Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-07-29T07:22:42.538Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-07-29T07:22:43.417Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-29T07:22:43.481Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/form-658b2:testIamPermissions  
+
+[debug] [2019-07-29T07:22:45.990Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-29T07:22:45.993Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/form-658b2  
+ 
+[debug] [2019-07-29T07:22:47.159Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Ethan\Desktop\Portfolio-master'...
+[info] 
+[debug] [2019-07-29T07:22:47.175Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/form-658b2/webApps/-/config  
+ 
+[warn] !  Your requested "node" version "8" doesn't match your global version "10"
+[debug] [2019-07-29T07:22:47.215Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/form-658b2/adminSdkConfig  
+ 
+[debug] [2019-07-29T07:22:47.710Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-29T07:22:47.807Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[info] +  functions: Emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\Ethan\Desktop\Portfolio-master\functions" for Cloud Functions...
+[debug] [2019-07-29T07:22:48.750Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Ethan\\Desktop\\Portfolio-master\\functions","node_version":"10.16.0"}
+[debug] [2019-07-29T07:22:48.750Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-07-29T07:22:48.755Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\Ethan\\Desktop\\Portfolio-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-07-29T07:22:48.758Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Ethan\\Desktop\\Portfolio-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-07-29T07:22:48.759Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Ethan\\Desktop\\Portfolio-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-07-29T07:41:01.327Z] File C:\Users\Ethan\Desktop\Portfolio-master\functions\package.json changed, reloading triggers
+[debug] [2019-07-29T07:41:03.547Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Ethan\\Desktop\\Portfolio-master\\functions","node_version":"10.16.0"}
+[debug] [2019-07-29T07:41:03.548Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[warn] !  The Cloud Functions directory you specified does not have a "package.json" file, so we can't load it.
+[warn] !  Error: Could not find package.json
+    at C:\Users\Ethan\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:123:19
+    at Generator.next (<anonymous>)
+    at C:\Users\Ethan\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:7:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\Ethan\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:3:12)
+    at resolveDeveloperNodeModule (C:\Users\Ethan\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:119:12)
+    at C:\Users\Ethan\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:153:38
+    at Generator.next (<anonymous>)
+    at C:\Users\Ethan\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:7:71
+    at new Promise (<anonymous>)
+[warn] !  Your function was killed because it raised an unhandled error.
+[debug] [2019-07-29T07:41:09.050Z] File C:\Users\Ethan\Desktop\Portfolio-master\functions\package.json changed, reloading triggers
+[debug] [2019-07-29T07:41:11.689Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Ethan\\Desktop\\Portfolio-master\\functions","node_version":"10.16.0"}
+[debug] [2019-07-29T07:41:11.690Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-07-29T07:41:11.696Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\Ethan\\Desktop\\Portfolio-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-07-29T07:41:11.698Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Ethan\\Desktop\\Portfolio-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-07-29T07:41:11.699Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Ethan\\Desktop\\Portfolio-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-07-29T08:04:43.002Z] File C:\Users\Ethan\Desktop\Portfolio-master\functions\index.js changed, reloading triggers
+[debug] [2019-07-29T08:04:45.342Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Ethan\\Desktop\\Portfolio-master\\functions","node_version":"10.16.0"}
+[debug] [2019-07-29T08:04:45.342Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-07-29T08:04:45.346Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\Ethan\\Desktop\\Portfolio-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-07-29T08:04:45.348Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Ethan\\Desktop\\Portfolio-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-07-29T08:04:45.349Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Ethan\\Desktop\\Portfolio-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-07-29T08:05:14.651Z] File C:\Users\Ethan\Desktop\Portfolio-master\functions\index.js changed, reloading triggers
+[debug] [2019-07-29T08:05:17.004Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Ethan\\Desktop\\Portfolio-master\\functions","node_version":"10.16.0"}
+[debug] [2019-07-29T08:05:17.005Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-07-29T08:05:17.011Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\Ethan\\Desktop\\Portfolio-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-07-29T08:05:17.013Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Ethan\\Desktop\\Portfolio-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-07-29T08:05:17.014Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Ethan\\Desktop\\Portfolio-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-07-29T10:14:14.887Z] ----------------------------------------------------------------------
+[debug] [2019-07-29T10:14:14.890Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Ethan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-07-29T10:14:14.890Z] CLI Version:   7.2.0
+[debug] [2019-07-29T10:14:14.890Z] Platform:      win32
+[debug] [2019-07-29T10:14:14.890Z] Node Version:  v10.16.0
+[debug] [2019-07-29T10:14:14.891Z] Time:          Mon Jul 29 2019 12:14:14 GMT+0200 (South Africa Standard Time)
+[debug] [2019-07-29T10:14:14.891Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-07-29T10:14:14.903Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-07-29T10:14:14.904Z] > authorizing via signed-in user
+[debug] [2019-07-29T10:14:14.905Z] [iam] checking project form-658b2 for permissions ["firebase.projects.get"]
+[debug] [2019-07-29T10:14:14.906Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-07-29T10:14:14.907Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-07-29T10:14:15.840Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-29T10:14:15.889Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/form-658b2:testIamPermissions  
+
+[debug] [2019-07-29T10:14:18.218Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-29T10:14:18.222Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/form-658b2  
+ 
+[debug] [2019-07-29T10:14:19.364Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Ethan\Desktop\Portfolio-master'...
+[info] 
+[debug] [2019-07-29T10:14:19.380Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/form-658b2/webApps/-/config  
+ 
+[warn] !  Your requested "node" version "8" doesn't match your global version "10"
+[debug] [2019-07-29T10:14:19.417Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/form-658b2/adminSdkConfig  
+ 
+[debug] [2019-07-29T10:14:19.916Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-29T10:14:19.999Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[info] +  functions: Emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\Ethan\Desktop\Portfolio-master\functions" for Cloud Functions...
+[debug] [2019-07-29T10:14:20.928Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Ethan\\Desktop\\Portfolio-master\\functions","node_version":"10.16.0"}
+[debug] [2019-07-29T10:14:20.928Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-07-29T10:14:20.931Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\Ethan\\Desktop\\Portfolio-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-07-29T10:14:20.933Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Ethan\\Desktop\\Portfolio-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-07-29T10:14:20.934Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Ethan\\Desktop\\Portfolio-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  C:\Users\Ethan\Desktop\Portfolio-master\functions\index.js:31
+};
+^
+
+SyntaxError: Unexpected token }
+    at Module._compile (internal/modules/cjs/loader.js:721:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:690:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at C:\Users\Ethan\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:663:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\Ethan\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:4:58)
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2019-07-29T10:16:52.069Z] File C:\Users\Ethan\Desktop\Portfolio-master\functions\index.js changed, reloading triggers
+[debug] [2019-07-29T10:16:54.801Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Ethan\\Desktop\\Portfolio-master\\functions","node_version":"10.16.0"}
+[debug] [2019-07-29T10:16:54.802Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-07-29T10:16:54.807Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\Ethan\\Desktop\\Portfolio-master\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-07-29T10:16:54.809Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Ethan\\Desktop\\Portfolio-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-07-29T10:16:54.811Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\Ethan\\Desktop\\Portfolio-master\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  C:\Users\Ethan\Desktop\Portfolio-master\functions\index.js:31
+};
+^
+
+SyntaxError: Unexpected token }
+    at Module._compile (internal/modules/cjs/loader.js:721:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:690:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at C:\Users\Ethan\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:663:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\Ethan\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:4:58)
+[warn] !  We were unable to load your functions code. (see above)
