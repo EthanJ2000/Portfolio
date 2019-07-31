@@ -10,8 +10,8 @@ var firebaseConfig = {
   };
 
 
-  grecaptcha.execute();
-  grecaptcha.render();
+  // grecaptcha.execute();
+  // grecaptcha.render();
 
   firebase.initializeApp(firebaseConfig);
 
