@@ -1,17 +1,9 @@
 
 
 const functions = require('firebase-functions');
-// var admin = require('firebase-admin');
-// const express = require('express');
+
 //Email Start
 const nodemailer = require('nodemailer');
-// const app = express()
-
-// var emailRecepient;
-// var userName;
-
-// const gmailEmail = functions.config().gmail.email;
-// const gmailPassword = functions.config().gmail.password;
  
 
 const transporter = nodemailer.createTransport({
@@ -63,20 +55,24 @@ exports.checkRecaptcha = functions.https.onRequest((req, res) => {
         uri: 'https://recaptcha.google.com/recaptcha/api/siteverify',
         method: 'POST',
         formData: {
-            secret: '6LealK8UAAAAAG_PYZx00-YdGE5XUFsmqHIsCmGU',
+            secret: '6Le2J7EUAAAAAIm4Myd4zBfrvjwsisLCzaHu5l-z',
             response: response
         },
         json: true
     }).then(result => {
         console.log("recaptcha result", result)
         if (result.success) {
-            res.send("You're good to go, human.")
+            // res.send("You're good to go, human.")
+            console.log("You're good to go, human.");
         }
         else {
-            res.send("Recaptcha verification failed. Are you a robot?")
+            // res.send("Recaptcha verification failed. Are you a robot?")
+            console.log("Recaptcha verification failed. Are you a robot?");
         }
     }).catch(reason => {
         console.log("Recaptcha request failure", reason)
         res.send("Recaptcha request failed.")
     })
 })
+
+//Recaptcha end
