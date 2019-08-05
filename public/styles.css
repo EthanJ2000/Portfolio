@@ -278,7 +278,7 @@ input{
 }
 .form{
   text-align: center;
-  margin-right: 10%;
+  margin-right: 15%;
 }
 label{
   margin-right: 5%;
@@ -304,11 +304,23 @@ label{
   
 }
 
+.g-recaptcha{
+  /* display: inline-block; */
+  margin-left: 42%;
+  margin-top: 5%;
+}
+
 #submit{
   margin-top: 3%;
   margin-bottom: 10%;
+  margin-left: 7%;
   display: inline-block;
+  border-radius: 15px;
+  width: 15%;
+  height: 40px;
 }
+
+
 
 /* Mobile */
 /* max 480 start */

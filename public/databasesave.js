@@ -33,7 +33,6 @@ var Name = document.getElementById('user_name').value;
 var Email = document.getElementById('user_email').value;
 var Message = document.getElementById('message').value;
 
-
     
     saveMessage(Name, Email, Message);
 

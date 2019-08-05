@@ -5,7 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="styles.css">
 
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src='https://www.google.com/recaptcha/api.js?hl=en'></script>
 
+<script type="text/javascript">
+  function dataCallback(response) {
+      console.log("dataCallback", response);
+      document.getElementById("submit").disabled = false;
+      window.location.href = "/checkRecaptcha?response=" + encodeURIComponent(response);
+  }
+  function dataExpiredCallback() {
+      console.log("dataExpiredCallback");
+  }
+  </script>
 
 
 </head>
@@ -27,7 +39,7 @@
    <a href="https://www.facebook.com/ethanluke.jansen" target="blank_"> <img src="facebook.svg" alt="facebook" class="facebook"> </a> 
    <a href="https://twitter.com/home" target="blank_"> <img src="twitter.svg" alt="facebook" class="twitter"> </a>
    <a href="https://www.instagram.com/_ethanluke_/" target="blank_"> <img src="instagram.svg" alt="facebook" class="instagram"></a> 
-   <a href="https://www.youtube.com/" target="blank_"> <img src="youtube.svg" alt="facebook" class="youtube"> </a> 
+   <a href="https://www.youtube.com/channel/UCl9fpvDWkSC7NvTGPB0ivjQ" target="blank_"> <img src="youtube.svg" alt="facebook" class="youtube"> </a> 
 </div>    
 
 <div id="blankdiv"></div>
@@ -49,20 +61,22 @@
   <label>Message:</label>
   <textarea name="message" required="true" id="message"></textarea>
   <br>
-  <button type="submit" value="send" id="submit">Submit</button>
+
+  <div class="g-recaptcha"
+  data-sitekey="6Le2J7EUAAAAAIafbJllxW3zVGXGIOgwvX8XdM1t"
+  data-callback="dataCallback"
+  data-expired-callback="dataExpiredCallback"></div>
+
+  <button type="submit" value="send" id="submit" disabled >Submit</button>
+  
 </div>
   
 
 </form>
 
-<script src='https://www.google.com/recaptcha/api.js'></script>
-<script src='https://www.google.com/recaptcha/api.js?hl=en'></script>
 
-<div class="g-recaptcha"
-          data-sitekey="6LealK8UAAAAAMZKS2jyaWFUY7Eac7efBNF04yWd"
-          data-callback="onSubmit"
-          data-size="invisible">
-    </div>
+
+
 
 
 <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
